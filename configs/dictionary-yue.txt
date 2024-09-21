@@ -1,0 +1,645 @@
+aa	aa
+aai	aa :i
+aak	aa :k
+aam	aa :m
+aan	aa :n
+aang	ah :g
+aap	aa :p
+aat	aa :t
+aau	ah :u
+ai	ae :i
+ak	ae :k
+am	ae :m
+ang	ae :g
+ap	ae :p
+au	ae :u
+baa	b aa
+baai	b aa :i
+baak	b aa :k
+baan	b aa :n
+baang	b ah :g
+baat	b aa :t
+baau	b ah :u
+bai	b ae :i
+bak	b ae :k
+bam	b ae :m
+ban	b ae :n
+bang	b ae :g
+bat	b ae :t
+bau	b ae :u
+be	b eh
+bei	b ih :i
+bek	b ea :k
+beng	b ea :g
+bi	b iy
+bik	b ih :k
+bin	b iy :n
+bing	b ih :g
+bit	b iy :t
+biu	b iy :u
+bo	b oa
+bok	b oa :k
+bong	b oa :g
+bou	b ox :u
+bui	b uw :i
+buk	b ox :k
+bun	b uw :n
+bung	b ox :g
+but	b uw :t
+caa	c aa
+caai	c aa :i
+caam	c aa :m
+caan	c aa :n
+caang	c ah :g
+caak	c aa :k
+caap	c aa :p
+caat	c aa :t
+caau	c ah :u
+cai	c ae :i
+cak	c ae :k
+cam	c ae :m
+can	c ae :n
+cang	c ae :g
+cap	c ae :p
+cat	c ae :t
+cau	c ae :u
+ce	c eh
+cek	c ea :k
+ceng	c ea :g
+ceoi	c eo :i
+ceon	c eo :n
+ceot	c eo :t
+ci	c iy
+cik	c ih :k
+cim	c iy :m
+cin	c iy :n
+cing	c ih :g
+cip	c iy :p
+cit	c iy :t
+ciu	c iy :u
+co	c oa
+coek	c oe :k
+coeng	c oe :g
+coi	c oa :i
+cok	c oa :k
+cong	c oa :g
+cou	c ox :u
+cuk	c ox :k
+cun	c uw :n
+cung	c ox :g
+cyu	c vw
+cyun	c vw :n
+cyut	c vw :t
+daa	d aa
+daai	d aa :i
+daak	d aa :k
+daam	d aa :m
+daan	d aa :n
+daap	d aa :p
+daat	d aa :t
+dai	d ae :i
+dak	d ae :k
+dang	d ae :g
+dap	d ae :p
+dat	d ae :t
+dau	d ae :u
+de	d eh
+dei	d ih :i
+dek	d ea :k
+deng	d ea :g
+deoi	d eo :i
+deon	d eo :n
+deot	d eo :t
+deu	d ea :u
+di	d iy
+dik	d ih :k
+dim	d iy :m
+din	d iy :n
+ding	d ih :g
+dip	d iy :p
+dit	d iy :t
+diu	d iy :u
+do	d oa
+doe	d oe
+doek	d oe :k
+doi	d oa :i
+dok	d oa :k
+dong	d oa :g
+dou	d ox :u
+duk	d ox :k
+dung	d ox :g
+dyun	d vw :n
+dyut	d vw :t
+e	eh
+ei	ih :i
+faa	f aa
+faai	f aa :i
+faak	f aa :k
+faan	f aa :n
+faat	f aa :t
+fai	f ae :i
+fan	f ae :n
+fang	f ae :g
+fat	f ae :t
+fau	f ae :u
+fe	f eh
+fei	f ih :i
+fiu	f iy :u
+fo	f oa
+fok	f oa :k
+fong	f oa :g
+fu	f uw
+fui	f uw :i
+fuk	f ox :k
+fun	f uw :n
+fung	f ox :g
+fut	f uw :t
+gaa	g aa
+gaai	g aa :i
+gaak	g aa :k
+gaam	g aa :m
+gaan	g aa :n
+gaang	g ah :g
+gaap	g aa :p
+gaat	g aa :t
+gaau	g ah :u
+gai	g ae :i
+gam	g ae :m
+gan	g ae :n
+gang	g ae :g
+gap	g ae :p
+gat	g ae :t
+gau	g ae :u
+ge	g eh
+gei	g ih :i
+geng	g ea :g
+geoi	g eo :i
+gep	g ea :p
+gik	g ih :k
+gim	g iy :m
+gin	g iy :n
+ging	g ih :g
+gip	g iy :p
+git	g iy :t
+giu	g iy :u
+go	g oa
+goe	g oe
+goek	g oe :k
+goeng	g oe :g
+goi	g oa :i
+gok	g oa :k
+gon	g oa :n
+gong	g oa :g
+got	g oa :t
+gou	g ox :u
+gu	g uw
+gui	g uw :i
+guk	g ox :k
+gun	g uw :n
+gung	g ox :g
+gwaa	g w aa
+gwaai	g w aa :i
+gwaak	g w aa :k
+gwaan	g w aa :n
+gwaang	g w ah :g
+gwaat	g w aa :t
+gwai	g w ae :i
+gwan	g w ae :n
+gwang	g w ae :g
+gwat	g w ae :t
+gwik	g w ih :k
+gwing	g w ih :g
+gwo	g w oa
+gwok	g w oa :k
+gwong	g w oa :g
+gyun	g vw :n
+gyut	g vw :t
+haa	h aa
+haai	h aa :i
+haak	h aa :k
+haam	h aa :m
+haan	h aa :n
+haang	h ah :g
+haap	h aa :p
+haau	h ah :u
+hai	h ae :i
+hak	h ae :k
+ham	h ae :m
+han	h ae :n
+hang	h ae :g
+hap	h ae :p
+hat	h ae :t
+hau	h ae :u
+hei	h ih :i
+hek	h ea :k
+heng	h ea :g
+heoi	h eo :i
+hik	h ih :k
+him	h iy :m
+hin	h iy :n
+hing	h ih :g
+hip	h iy :p
+hit	h iy :t
+hiu	h iy :u
+ho	h oa
+hoe	h oe
+hoeng	h oe :g
+hoi	h oa :i
+hok	h oa :k
+hon	h oa :n
+hong	h oa :g
+hot	h oa :t
+hou	h ox :u
+huk	h ox :k
+hung	h ox :g
+hyun	h vw :n
+hyut	h vw :t
+jaa	y aa
+jaai	y aa :i
+jaak	y aa :k
+jai	y ae :i
+jam	y ae :m
+jan	y ae :n
+jap	y ae :p
+jat	y ae :t
+jau	y ae :u
+je	y eh
+jeng	y ea :g
+jeoi	y eo :i
+jeon	y eo :n
+ji	y iy
+jik	y ih :k
+jim	y iy :m
+jin	y iy :n
+jing	y ih :g
+jip	y iy :p
+jit	y iy :t
+jiu	y iy :u
+jo	y oa
+joek	y oe :k
+joeng	y oe :g
+jou	y ox :u
+juk	y ox :k
+jung	y ox :g
+jyu	yv vw
+jyun	yv vw :n
+jyut	yv vw :t
+kaa	kh aa
+kaai	kh aa :i
+kaat	kh aa :t
+kaau	kh ah :u
+kai	kh ae :i
+kam	kh ae :m
+kan	kh ae :n
+kang	kh ae :g
+kap	kh ae :p
+kat	kh ae :t
+kau	kh ae :u
+ke	kh eh
+kei	kh ih :i
+kek	kh ea :k
+keoi	kh eo :i
+kik	kh ih :k
+kim	kh iy :m
+kin	kh iy :n
+king	kh ih :g
+kit	kh iy :t
+kiu	kh iy :u
+ko	kh oa
+koe	kh oe
+koek	kh oe :k
+koeng	kh oe :g
+koi	kh oa :i
+kok	kh oa :k
+kong	kh oa :g
+ku	kh uw
+kui	kh uw :i
+kuk	kh ox :k
+kung	kh ox :g
+kut	kh uw :t
+kwaa	kh w aa
+kwaai	kh w aa :i
+kwaang	kh w ah :g
+kwai	kh w ae :i
+kwan	kh w ae :n
+kwik	kh w ih :k
+kwok	kh w oa :k
+kwong	kh w oa :g
+kyun	kh vw :n
+kyut	kh vw :t
+laa	l aa
+laai	l aa :i
+laak	l aa :k
+laam	l aa :m
+laan	l aa :n
+laang	l ah :g
+laap	l aa :p
+laat	l aa :t
+laau	l ah :u
+lai	l ae :i
+lak	l ae :k
+lam	l ae :m
+lang	l ae :g
+lap	l ae :p
+lat	l ae :t
+lau	l ae :u
+le	l eh
+lei	l ih :i
+lek	l ea :k
+lem	l ea :m
+leng	l ea :g
+leoi	l eo :i
+leon	l eo :n
+leot	l eo :t
+li	l iy
+lik	l ih :k
+lim	l iy :m
+lin	l iy :n
+ling	l ih :g
+lip	l iy :p
+lit	l iy :t
+liu	l iy :u
+lo	l oa
+loek	l oe :k
+loeng	l oe :g
+loi	l oa :i
+lok	l oa :k
+long	l oa :g
+lou	l ox :u
+luk	l ox :k
+lung	l ox :g
+lyun	l vw :n
+lyut	l vw :t
+m	m
+maa	m aa
+maai	m aa :i
+maak	m aa :k
+maan	m aa :n
+maang	m ah :g
+maat	m aa :t
+maau	m ah :u
+mai	m ae :i
+mak	m ae :k
+mam	m ae :m
+man	m ae :n
+mang	m ae :g
+mat	m ae :t
+mau	m ae :u
+me	m eh
+mei	m ih :i
+meng	m ea :g
+mi	m iy
+mik	m ih :k
+min	m iy :n
+ming	m ih :g
+mit	m iy :t
+miu	m iy :u
+mo	m oa
+mok	m oa :k
+mong	m oa :g
+mou	m ox :u
+mui	m uw :i
+muk	m ox :k
+mun	m uw :n
+mung	m ox :g
+mut	m uw :t
+naa	n aa
+naai	n aa :i
+naam	n aa :m
+naan	n aa :n
+naap	n aa :p
+naat	n aa :t
+naau	n ah :u
+nai	n ae :i
+nak	n ae :k
+nam	n ae :m
+nan	n ae :n
+nang	n ae :g
+nap	n ae :p
+nat	n ae :t
+nau	n ae :u
+ne	n eh
+nei	n ih :i
+neoi	n eo :i
+neot	n eo :t
+ng	ng
+ngaa	ng aa
+ngaai	ng aa :i
+ngaak	ng aa :k
+ngaam	ng aa :m
+ngaan	ng aa :n
+ngaang	ng ah :g
+ngaap	ng aa :p
+ngaat	ng aa :t
+ngaau	ng ah :u
+ngai	ng ae :i
+ngak	ng ae :k
+ngam	ng ae :m
+ngan	ng ae :n
+ngang	ng ae :g
+ngap	ng ae :p
+ngat	ng ae :t
+ngau	ng ae :u
+ngit	ng iy :t
+ngo	ng oa
+ngoi	ng oa :i
+ngok	ng oa :k
+ngon	ng oa :n
+ngong	ng oa :g
+ngou	ng ox :u
+nguk	ng ox :k
+ngung	ng ox :g
+n	n
+ni	n iy
+nik	n ih :k
+nim	n iy :m
+nin	n iy :n
+ning	n ih :g
+nip	n iy :p
+niu	n iy :u
+no	n oa
+noeng	n oe :g
+noi	n oa :i
+nok	n oa :k
+nong	n oa :g
+nou	n ox :u
+nuk	n ox :k
+nung	n ox :g
+nyun	n vw :n
+o	oa
+oi	oa :i
+ok	oa :k
+on	oa :n
+ong	oa :g
+ou	ox :u
+paa	ph aa
+paai	ph aa :i
+paak	ph aa :k
+paan	ph aa :n
+paang	ph ah :g
+paat	ph aa :t
+paau	ph ah :u
+pai	ph ae :i
+pan	ph ae :n
+pang	ph ae :g
+pat	ph ae :t
+pau	ph ae :u
+pei	ph ih :i
+pek	ph ea :k
+peng	ph ea :g
+pik	ph ih :k
+pin	ph iy :n
+ping	ph ih :g
+pit	ph iy :t
+piu	ph iy :u
+po	ph oa
+poi	ph oa :i
+pok	ph oa :k
+pong	ph oa :g
+pou	ph ox :u
+pui	ph uw :i
+puk	ph ox :k
+pun	ph uw :n
+pung	ph ox :g
+put	ph uw :t
+saa	s aa
+saai	s aa :i
+saak	s aa :k
+saam	s aa :m
+saan	s aa :n
+saang	s ah :g
+saap	s aa :p
+saat	s aa :t
+saau	s ah :u
+sai	s ae :i
+sak	s ae :k
+sam	s ae :m
+san	s ae :n
+sang	s ae :g
+sap	s ae :p
+sat	s ae :t
+sau	s ae :u
+se	s eh
+sei	s ih :i
+sek	s ea :k
+seng	s ea :g
+seoi	s eo :i
+seon	s eo :n
+seot	s eo :t
+si	s iy
+sik	s ih :k
+sim	s iy :m
+sin	s iy :n
+sing	s ih :g
+sip	s iy :p
+sit	s iy :t
+siu	s iy :u
+so	s oa
+soek	s oe :k
+soeng	s oe :g
+soi	s oa :i
+sok	s oa :k
+song	s oa :g
+sou	s ox :u
+suk	s ox :k
+sung	s ox :g
+syu	s vw
+syun	s vw :n
+syut	s vw :t
+taa	th aa
+taai	th aa :i
+taam	th aa :m
+taan	th aa :n
+taap	th aa :p
+taat	th aa :t
+tai	th ae :i
+tam	th ae :m
+tan	th ae :n
+tang	th ae :g
+tau	th ae :u
+tek	th ea :k
+teng	th ea :g
+teoi	th eo :i
+teon	th eo :n
+tik	th ih :k
+tim	th iy :m
+tin	th iy :n
+ting	th ih :g
+tip	th iy :p
+tit	th iy :t
+tiu	th iy :u
+to	th oa
+toe	th oe
+toi	th oa :i
+tok	th oa :k
+tong	th oa :g
+tou	th ox :u
+tuk	th ox :k
+tung	th ox :g
+tyun	th vw :n
+tyut	th vw :t
+uk	ox :k
+ung	ox :g
+waa	w aa
+waai	w aa :i
+waak	w aa :k
+waan	w aa :n
+waang	w ah :g
+waat	w aa :t
+wai	w ae :i
+wan	w ae :n
+wang	w ae :g
+wat	w ae :t
+wik	w ih :k
+wing	w ih :g
+wo	w oa
+wou	w ox :u
+wok	w oa :k
+wong	w oa :g
+wu	w uw
+wui	w uw :i
+wun	w uw :n
+wut	w uw :t
+zaa	ts aa
+zaai	ts aa :i
+zaak	ts aa :k
+zaam	ts aa :m
+zaan	ts aa :n
+zaang	ts ah :g
+zaap	ts aa :p
+zaat	ts aa :t
+zaau	ts ah :u
+zai	ts ae :i
+zak	ts ae :k
+zam	ts ae :m
+zan	ts ae :n
+zang	ts ae :g
+zap	ts ae :p
+zat	ts ae :t
+zau	ts ae :u
+ze	ts eh
+zek	ts ea :k
+zeng	ts ea :g
+zeoi	ts eo :i
+zeon	ts eo :n
+zeot	ts eo :t
+zi	ts iy
+zik	ts ih :k
+zim	ts iy :m
+zin	ts iy :n
+zing	ts ih :g
+zip	ts iy :p
+zit	ts iy :t
+ziu	ts iy :u
+zo	ts oa
+zoek	ts oe :k
+zoeng	ts oe :g
+zoi	ts oa :i
+zok	ts oa :k
+zong	ts oa :g
+zou	ts ox :u
+zuk	ts ox :k
+zung	ts ox :g
+zyu	ts vw
+zyun	ts vw :n
+zyut	ts vw :t
