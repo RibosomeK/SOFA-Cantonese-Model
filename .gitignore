@@ -1,5 +1,8 @@
 __pycache__/
 .venv/
 .pytest_cache/
+target/
+test/
 
-./out
+out
+Cargo.lock

@@ -1,0 +1,2 @@
+[build]
+target-dir = "rust/change_scheme/target"

@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "rust/change_scheme"
+]
+resolver = "2"
