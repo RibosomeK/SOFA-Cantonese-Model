@@ -68,13 +68,10 @@ def iter_tg(tg: TextGrid) -> list[tuple[int, tuple[int, int]]]:
     indexes = []
     start = 0
     for idx, word_ivl in enumerate(tg.tiers[0].intervals):
-        print(word_ivl.mark, end=": ")
         for jdx, ph_ivl in enumerate(tg.tiers[1].intervals[start:]):
-            print(ph_ivl.mark, end=" ")
             if ph_ivl.maxTime == word_ivl.maxTime:
                 indexes.append((idx, (start, jdx + start)))
                 start = start + jdx + 1
-                print()
                 break
     return indexes
 
@@ -84,13 +81,15 @@ def change_scheme(scheme: Scheme, tg: TextGrid) -> TextGrid:
     new_tg.tiers[1].intervals.clear()
     for word_idx, (
         start,
-        _,
+        end,
     ) in iter_tg(tg):
         word = tg.tiers[0][word_idx].mark
         count = 0
         if word not in scheme:
             print(f"WARN: Unknown words: {word}")
             print("Skipped")
+            for idx in range(start, end+1):
+                new_tg.tiers[1].intervals.append(tg.tiers[1].intervals[idx])
             continue
         for new, old in scheme[word]:
             new_tg.tiers[1].add(
