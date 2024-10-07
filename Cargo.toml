@@ -1,5 +1,9 @@
 [workspace]
-members = [
-    "rust/change_scheme"
-]
+members = ["rust/change_scheme"]
 resolver = "2"
+
+[profile.release]
+strip = true      # Automatically strip symbols from the binary.
+opt-level = "s"
+lto = true
+codegen-units = 1
