@@ -122,7 +122,13 @@ impl TextGrid {
     }
 
     pub fn save(&self, path: &str) {
-        let mut file = File::create(path).unwrap();
+        let mut file = match File::create(path) {
+            Ok(f) => f,
+            Err(err) => {
+                error!("Failed to save TextGrid file due to: {}", err);
+                exit(-1);
+            }
+        };
         file.write_all(self.to_string().as_bytes()).unwrap();
     }
 
