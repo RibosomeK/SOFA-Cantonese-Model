@@ -96,16 +96,8 @@ fn main() {
     let tg_dir = if let Some(tg_dir) = matches.get_one::<PathBuf>("TextGrids") {
         info!("TextGrid directory: {}", tg_dir.display());
         if !Path::exists(&tg_dir) {
-            match create_dir_all(tg_dir) {
-                Ok(_) => {}
-                Err(err) => {
-                    error!(
-                        "{} does not exists and failed to create it due to {err}.",
-                        tg_dir.display()
-                    );
-                    exit(-1);
-                }
-            }
+            error!("{} does not exists", tg_dir.display());
+            exit(-1);
         };
         tg_dir.to_owned()
     } else {
