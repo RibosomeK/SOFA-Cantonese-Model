@@ -35,6 +35,8 @@ This script is aim to transform label file into other scheme (by default is two-
 - Fixed missing word in `cantonese-two-seg.csv` (baat)
 - Added checking feature, words that already in giving scheme or have mismatch phonemes will be informed or warned. Now you can use the script for the same `TextGrid` file for multiple times
 
+### Usage
+
 ```
 > python change_scheme.py --help
 
@@ -127,6 +129,9 @@ For more reference, you could look into the `./configs/cantonese-two-seg.csv` fi
 
 - 补上了 `cantonese-two-seg.csv` 里缺失的字（baat）
 - 增加了检查功能。已经被替换的字或错字会被提示或警告，并被跳过。现在可以反复处理同一个 `TextGrid` 文件
+
+
+### 使用方式
 
 ```
 > python change_scheme.py --help
