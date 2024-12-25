@@ -86,9 +86,24 @@ def change_scheme(scheme: Scheme, tg: TextGrid) -> TextGrid:
         word = tg.tiers[0][word_idx].mark
         count = 0
         if word not in scheme:
-            print(f"WARN: Unknown words: {word}")
+            print(f'WARN: Unknown words: "{word}"')
             print("Skipped")
-            for idx in range(start, end+1):
+            for idx in range(start, end + 1):
+                new_tg.tiers[1].intervals.append(tg.tiers[1].intervals[idx])
+            continue
+        old_ph = [ph.mark for ph in tg.tiers[1].intervals[start : end + 1]]
+        sch_new_ph = [ph.new for ph in scheme[word]]
+        sch_old_ph = [ph for pair in scheme[word] for ph in pair.old]
+        if sch_old_ph != old_ph:
+            if sch_new_ph == old_ph:
+                print(f'INFO: Word "{word}" already in given scheme: {old_ph}')
+                print("Skipped")
+            else:
+                print(
+                    f'WARN: Word: "{word}: {old_ph}" does not match the given scheme: {sch_old_ph}'
+                )
+                print("Skipped")
+            for idx in range(start, end + 1):
                 new_tg.tiers[1].intervals.append(tg.tiers[1].intervals[idx])
             continue
         for new, old in scheme[word]:

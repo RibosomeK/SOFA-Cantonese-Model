@@ -35,10 +35,48 @@ fn change_scheme(scheme: &Scheme, tg: &TextGrid) -> TextGrid {
     for (word_idx, (start, end)) in iter_indexes(tg) {
         let word = &tg.items[0].intervals[word_idx].text;
         let mut count = 0;
-        for pair in match scheme.get(word.as_str()) {
-            Some(p) => p,
+        match scheme.get(word.as_str()) {
+            Some(pairs) => {
+                let old_ph = tg.items[1].intervals[start..end + 1]
+                    .iter()
+                    .map(|ivl| ivl.text.as_str())
+                    .collect::<Vec<&str>>();
+                let sch_new_ph = pairs.iter().map(|p| p.new.as_str()).collect::<Vec<&str>>();
+                let sch_old_ph = pairs
+                    .iter()
+                    .flat_map(|p| &p.old)
+                    .map(|s| s.as_str())
+                    .collect::<Vec<&str>>();
+                if sch_old_ph != old_ph {
+                    if sch_new_ph == old_ph {
+                        info!("Word \"{word}\" already in given scheme: {:?}", old_ph);
+                        info!("Skipped");
+                    } else {
+                        warn!(
+                            "Word: \"{word}: {:?}\" does not match the given scheme: {:?}",
+                            old_ph, sch_old_ph
+                        );
+                        warn!("Skipped");
+                    }
+                    for i in start..end + 1 {
+                        new_tg.items[1]
+                            .intervals
+                            .push(tg.items[1].intervals[i].clone());
+                    }
+                    continue;
+                }
+                for pair in pairs {
+                    new_tg.items[1].intervals.push(Interval {
+                        min_time: tg.items[1].intervals[start + count].min_time,
+                        max_time: tg.items[1].intervals[start + count + pair.old.len() - 1]
+                            .max_time,
+                        text: pair.new.clone(),
+                    });
+                    count += pair.old.len();
+                }
+            }
             None => {
-                warn!("Unknown words: {word}");
+                warn!("Unknown words: \"{word}\"");
                 warn!("Skipped");
                 for i in start..end + 1 {
                     new_tg.items[1]
@@ -47,13 +85,6 @@ fn change_scheme(scheme: &Scheme, tg: &TextGrid) -> TextGrid {
                 }
                 continue;
             }
-        } {
-            new_tg.items[1].intervals.push(Interval {
-                min_time: tg.items[1].intervals[start + count].min_time,
-                max_time: tg.items[1].intervals[start + count + pair.old.len() - 1].max_time,
-                text: pair.new.clone(),
-            });
-            count += pair.old.len();
         }
     }
     new_tg
