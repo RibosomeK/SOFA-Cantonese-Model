@@ -30,6 +30,10 @@ This script is aim to transform label file into other scheme (by default is two-
 
 ### Changelogs
 
+2024-12-28
+
+- Backwards compatible to python3.8, which is SOFA currently using
+
 2024-12-25
 
 - Fixed missing word in `cantonese-two-seg.csv` (baat)
