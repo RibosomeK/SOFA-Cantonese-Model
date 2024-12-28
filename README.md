@@ -129,6 +129,10 @@ For more reference, you could look into the `./configs/cantonese-two-seg.csv` fi
 
 ### 更新日志
 
+2024-12-28
+
+- 向后兼容至 SOFA 目前使用的 python3.8 
+
 2024-12-25 
 
 - 补上了 `cantonese-two-seg.csv` 里缺失的字（baat）
