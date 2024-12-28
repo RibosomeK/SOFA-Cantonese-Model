@@ -1,6 +1,6 @@
 import os
 from textgrid import TextGrid, IntervalTier
-from typing import NamedTuple
+from typing import NamedTuple, List, Tuple
 import csv
 import argparse
 
@@ -16,13 +16,13 @@ def copy_tg(tg: TextGrid) -> TextGrid:
 
 class Pair(NamedTuple):
     new: str
-    old: tuple[str, ...]
+    old: Tuple[str, ...]
 
 
-Scheme = dict[str, list[Pair]]
+Scheme = dict[str, List[Pair]]
 
 
-def _get_paris(old: list[str], new: list[str]) -> list[Pair]:
+def _get_paris(old: List[str], new: List[str]) -> List[Pair]:
     start, end = 0, 0
     buf = ""
     ret = []
@@ -58,7 +58,7 @@ def read_scheme(file: str) -> Scheme:
     return scheme
 
 
-def iter_tg(tg: TextGrid) -> list[tuple[int, tuple[int, int]]]:
+def iter_tg(tg: TextGrid) -> List[Tuple[int, Tuple[int, int]]]:
     """
     [
         (word_idx, (ph_start_idx, ph_end_idx))
