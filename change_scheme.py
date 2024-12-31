@@ -1,8 +1,12 @@
 import os
 from textgrid import TextGrid, IntervalTier
-from typing import NamedTuple, List, Tuple
+from typing import NamedTuple, List, Tuple, Dict
 import csv
 import argparse
+import logging
+
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 
 def copy_tg(tg: TextGrid) -> TextGrid:
@@ -19,7 +23,7 @@ class Pair(NamedTuple):
     old: Tuple[str, ...]
 
 
-Scheme = dict[str, List[Pair]]
+Scheme = Dict[str, List[Pair]]
 
 
 def _get_paris(old: List[str], new: List[str]) -> List[Pair]:
@@ -86,8 +90,8 @@ def change_scheme(scheme: Scheme, tg: TextGrid) -> TextGrid:
         word = tg.tiers[0][word_idx].mark
         count = 0
         if word not in scheme:
-            print(f'WARN: Unknown words: "{word}"')
-            print("Skipped")
+            logging.warning(f'Unknown words "{word}"')
+            logging.warning("Skipped")
             for idx in range(start, end + 1):
                 new_tg.tiers[1].intervals.append(tg.tiers[1].intervals[idx])
             continue
@@ -96,13 +100,13 @@ def change_scheme(scheme: Scheme, tg: TextGrid) -> TextGrid:
         sch_old_ph = [ph for pair in scheme[word] for ph in pair.old]
         if sch_old_ph != old_ph:
             if sch_new_ph == old_ph:
-                print(f'INFO: Word "{word}" already in given scheme: {old_ph}')
-                print("Skipped")
+                logging.info(f'Word "{word}" already in given scheme: {old_ph}')
+                logging.info("Skipped")
             else:
-                print(
-                    f'WARN: Word: "{word}: {old_ph}" does not match the given scheme: {sch_old_ph}'
+                logging.warning(
+                    f'Word "{word}: {old_ph}" does not match the original form of given scheme: {sch_old_ph}'
                 )
-                print("Skipped")
+                logging.warning("Skipped")
             for idx in range(start, end + 1):
                 new_tg.tiers[1].intervals.append(tg.tiers[1].intervals[idx])
             continue
@@ -138,8 +142,16 @@ def main():
         default=DEFAULT_OUT,
         help=f"output directory. Default is {DEFAULT_OUT}",
     )
+    parser.add_argument(
+        "-q",
+        "--quiet",
+        action="store_true",
+        help="Do not show log messages.",
+    )
 
     args = parser.parse_args()
+    if args.quiet:
+        logging.disable()
     scheme = read_scheme(args.scheme)
     scheme["SP"] = [Pair("SP", ("SP",))]
     scheme["AP"] = [Pair("AP", ("AP",))]
@@ -150,8 +162,10 @@ def main():
             name, ext = os.path.splitext(file)
             if ext != ".TextGrid":
                 continue
+            logging.info(f"Processing {file}")
             new_tg = change_scheme(scheme, TextGrid.fromFile(os.path.join(root, file)))
             new_tg.write(os.path.join(args.out, file))
+            logging.info(f"Done with {file}")
 
 
 if __name__ == "__main__":
