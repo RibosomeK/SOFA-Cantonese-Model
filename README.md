@@ -30,6 +30,10 @@ This script is aim to transform label file into other scheme (by default is two-
 
 ### Changelogs
 
+2024-12-31
+
+- improved logging message.
+
 2024-12-28
 
 - Backwards compatible to python3.8, which is SOFA currently using
@@ -54,6 +58,7 @@ options:
   -s SCHEME, --scheme SCHEME
                         The path of scheme file. default is ./configs/cantonese-two-seg.csv
   -o OUT, --out OUT     output directory. Default is ./out
+  -q, --quiet           Do not show log messages.
 ```
 
 If you're already in a python environment that setup for SOFA, you are ready to go. If not run this to install dependency:
@@ -129,6 +134,10 @@ For more reference, you could look into the `./configs/cantonese-two-seg.csv` fi
 
 ### 更新日志
 
+2024-12-31
+
+- 改善脚本日志提示信息
+
 2024-12-28
 
 - 向后兼容至 SOFA 目前使用的 python3.8 
@@ -154,6 +163,7 @@ options:
   -s SCHEME, --scheme SCHEME
                         The path of scheme file. default is ./configs/cantonese-two-seg.csv
   -o OUT, --out OUT     output directory. Default is ./out
+  -q, --quiet           Do not show log messages.
 ```
 
 如果你已经在 SOFA 的 python 环境内，则可直接执行脚本使用，如果不是，请执行以下命令安装依赖：
