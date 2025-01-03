@@ -62,6 +62,9 @@ def read_scheme(file: str) -> Scheme:
     return scheme
 
 
+class LineupError(Exception): ...
+
+
 def iter_tg(tg: TextGrid) -> List[Tuple[int, Tuple[int, int]]]:
     """
     [
@@ -73,10 +76,12 @@ def iter_tg(tg: TextGrid) -> List[Tuple[int, Tuple[int, int]]]:
     start = 0
     for idx, word_ivl in enumerate(tg.tiers[0].intervals):
         for jdx, ph_ivl in enumerate(tg.tiers[1].intervals[start:]):
-            if ph_ivl.maxTime == word_ivl.maxTime:
+            if abs(ph_ivl.maxTime - word_ivl.maxTime) < 0.0001:
                 indexes.append((idx, (start, jdx + start)))
                 start = start + jdx + 1
                 break
+            if ph_ivl.maxTime > word_ivl.maxTime:
+                raise LineupError(f"could not lineup word and phoneme")
     return indexes
 
 
@@ -163,7 +168,14 @@ def main():
             if ext != ".TextGrid":
                 continue
             logging.info(f"Processing {file}")
-            new_tg = change_scheme(scheme, TextGrid.fromFile(os.path.join(root, file)))
+            try:
+                new_tg = change_scheme(
+                    scheme, TextGrid.fromFile(os.path.join(root, file))
+                )
+            except LineupError:
+                logging.error(f"Failed to process {file}")
+                logging.error("Skipped")
+                continue
             new_tg.write(os.path.join(args.out, file))
             logging.info(f"Done with {file}")
 
