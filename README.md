@@ -30,6 +30,10 @@ This script is aim to transform label file into other scheme (by default is two-
 
 ### Changelogs
 
+2025-01-03
+
+- fixed potential lineup error
+
 2024-12-31
 
 - improved logging message.
@@ -133,6 +137,10 @@ For more reference, you could look into the `./configs/cantonese-two-seg.csv` fi
 附带的易用脚本用于转化标记文件到不同的方案。
 
 ### 更新日志
+
+2025-01-03
+
+- 修正潜在的对齐错误
 
 2024-12-31
 
